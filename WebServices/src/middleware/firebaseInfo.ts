@@ -7,7 +7,7 @@ const extractFirebaseInfo = (
   next: NextFunction
 ) => {
   const token = req.headers.authorization?.split(" ")[1];
-
+  console.log("yahan aya kiya");
   if (token) {
     firebaseAdmin
       .auth()

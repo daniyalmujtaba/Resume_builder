@@ -10,4 +10,4 @@ router.post('/create',extractFirebaseInfo, controller.create);
 router.post('/login',extractFirebaseInfo, controller.login);
 router.get('/', controller.readAll);
 
-export default router;
+export default router;  
