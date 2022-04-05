@@ -6,7 +6,7 @@ import IUser from '../../interfaces/user';
 const NAMESPACE = 'Auth';
 
 
-export const Authenticate = async (uid: string, name: string, fire_token: string, callback: (error: string | null, user: IUser | null) => void) => {
+export const Authenticate = async (uid: string, name: string, fire_token: string) => {
   try {
       let response = await axios({
           method: 'POST',
@@ -19,19 +19,17 @@ export const Authenticate = async (uid: string, name: string, fire_token: string
       });
 
       if (response.status === 200 || response.status === 201 || response.status === 304) {
-           // logging.info('Successfully authenticated.', NAMESPACE);
-          callback(null, response.data.user);
+          
+          return response.data.user;
       } else {
-           // logging.warn('Unable to authenticate.', NAMESPACE);
-          callback('Unable to authenticate.', null);
+          return new Error('Unable to authenticate');
       }
   } catch (error) {
-       // logging.error(error, NAMESPACE);
-      callback('Unable to authenticate.', null);
+       return new Error('Unable to authenticate');
   }
 };
 
-export const Validate = async (fire_token: string, callback: (error: string | null, user: IUser | null) => void) => {
+export const Validate = async (fire_token: string) => {
   try {
       let response = await axios({
           method: 'GET',
@@ -41,14 +39,12 @@ export const Validate = async (fire_token: string, callback: (error: string | nu
 
       if (response.status === 200 || response.status === 304) {
            // logging.info('Successfully validated.', NAMESPACE);
-          callback(null, response.data.user);
+          return response.data.user;
       } else {
-           // logging.warn(response, NAMESPACE);
-          callback('Unable to validate.', null);
+        throw new Error('Unable to Validaate');
       }
   } catch (error) {
-       // logging.error(error, NAMESPACE);
-      callback('Unable to validate.', null);
+      return error
   }
 };
 

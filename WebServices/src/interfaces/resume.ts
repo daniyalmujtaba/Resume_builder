@@ -9,6 +9,7 @@ import IUser from './user';
 
 
 export default interface IResume extends Document {
+    Title:string,
     User: IUser,
     BasicInfo :  IBasicInfo | null,
     Education? : IEducation[] |  IEducation | null,

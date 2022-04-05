@@ -4,7 +4,8 @@ import IResume from "../interfaces/resume";
  
 
 const ResumeSchema : mongoose.Schema = new mongoose.Schema({
-    
+    Title : {type: String, required:true},
+
     uid : {type: String, unique:true},
     User: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }, 
     BasicInfo :  {
@@ -18,35 +19,37 @@ const ResumeSchema : mongoose.Schema = new mongoose.Schema({
     Education : [{
       
       Institute : {type : mongoose.Schema.Types.Mixed, unique: false, required: true},
-      startDate : {type : mongoose.Schema.Types.Mixed, unique: false, required: true},
-      endDate : {type : mongoose.Schema.Types.Mixed, unique: false, required: false},
-      present : {type: Boolean, required:true},
+      StartDate : {type : mongoose.Schema.Types.Mixed, unique: false, required: true},
+      EndDate : {type : mongoose.Schema.Types.Mixed, unique: false, required: false},
+      Present : {type: Boolean, required:true},
       Summary: {type: String, required:false},
       Level : {type: String, required:true},
       Major: {type: String, required:true},
       GPA: {type: String, required:false},
+      Location : {type:String, required:true},
   }],
     Hobbies : [{type: String, required:false}],
     Achievements: [{
-      title: {type: String, required:true},
-      summary:{type: String, required:false},
-      date : {type : mongoose.Schema.Types.Mixed, required: false}, 
+      Title: {type: String, required:true},
+      Summary:{type: String, required:false},
+      Date : {type : mongoose.Schema.Types.Mixed, required: false}, 
   }],
     Projects : [{
-      title: {type: String, required:true},
-      summary:{type: String, required:true},
+      Title: {type: String, required:true},
+      Summary:{type: String, required:true},
   }],
     Experience : [{
       
       Company : {type: String, required:true},
-      startDate : {type : mongoose.Schema.Types.Mixed, required: true},
-      endDate : {type : mongoose.Schema.Types.Mixed, required: false},
-      present : {type: Boolean, required:true},
+      StartDate : {type : mongoose.Schema.Types.Mixed, required: true},
+      EndDate : {type : mongoose.Schema.Types.Mixed, required: false},
+      Present : {type: Boolean, required:true},
+      Type: {type:String, required: true},
       Summary: {type: String, required:false},
   }],
     Skills: [{
-      name: {type: String, required:true},
-      level: {type : mongoose.Schema.Types.Mixed, unique: true, required: true},
+      Name: {type: String, required:true},
+      Level: {type : mongoose.Schema.Types.Mixed, unique: true, required: true},
   }],
     Summary :{
       type : String,required: false,

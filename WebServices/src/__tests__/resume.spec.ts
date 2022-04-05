@@ -50,7 +50,7 @@ describe('Testing ReadAll', ()=>{
   it('GET /resume/:validtoken must get a resume object ',async ()=>{
     
     return await request(server).get('/resume/readAll/62497fbc6a077a3026357f29')
-    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjQ2NDExN2FjMzk2YmM3MWM4YzU5ZmI1MTlmMDEzZTJiNWJiNmM2ZTEiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTE2MTk1LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxMTYxOTUsImV4cCI6MTY0OTExOTc5NSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.UWF_KiRj8XMuzMMQYlMDEJi32zZey3FFmEq1tM0MXyJPj73s3IY-_Foonb8nViHWJXT-8t-1lGcK7tGfdWeIRb4MvaPMX0gbC3WNMXUm2XmKKcD3_B-GT62g8IHCTx27mKF7ReClzrOu_KUueZJimGyDIOgYOOZIB78uctjoBxckBdc_-kdQuTc5CCRM9ScqX_CNAzmcNdS107YbpecAupoL1HSn4bFGbzu-CVWp8wxolOS8mPW_ZrgvDF2LQ_5U6qge37WvsG9wpdl-7dPVKlVDtaqY_B2z6qrZIKJzNGVnv-O3P70_2xWklKXVDw-OZJJPjjm5niIjFsODp9peDQ",{type:"bearer"})
+    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjZhNGY4N2ZmNWQ5M2ZhNmVhMDNlNWM2ZTg4ZWVhMGFjZDJhMjMyYTkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTY5ODg5LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxNjk4ODksImV4cCI6MTY0OTE3MzQ4OSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.VGTp_XbHbG7XUIfYPh-mbmbgKGnFbTdpMSSPDaOJK1L-Ih1Dd2uoV6D4cJHv7kVJC37RtN9mYaYnSFGlwZMKAR5F0HyZXX8tkGa19MuGrZCUXArXtEMz7ae6pK1Tr17ONrFls2L-lpFPgExOiBTmLiG353sjgLPNPx9M1lcvJP05_wOWefZCBmsWXPjJAOFHrXvf9Ku3d3qtsWza0mz36xGa8lCGVVgOc-k1t6fbia7d706E9N1KfvU6NFufYAqZq4P6Rgi9EEUjlvsiz3CtfsempzML1jsk8lO3wG6okmv51YysT1vYaHucVNkikBEH5iIzk6m0aQcwWflUlZNtlw",{type:"bearer"})
     .expect('Content-Type', /json/).expect(200)
     .then((response)=>{
       expect(response.body).toEqual(expect.objectContaining({
@@ -63,7 +63,7 @@ describe('Testing ReadAll', ()=>{
 
   it('GET /resume/:userID=valid but wrong token must get count 0 and resumes = [] ', async ()=>{
     return await request(server).get('/resume/readAll/dadad')
-    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjQ2NDExN2FjMzk2YmM3MWM4YzU5ZmI1MTlmMDEzZTJiNWJiNmM2ZTEiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTE2MTk1LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxMTYxOTUsImV4cCI6MTY0OTExOTc5NSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.UWF_KiRj8XMuzMMQYlMDEJi32zZey3FFmEq1tM0MXyJPj73s3IY-_Foonb8nViHWJXT-8t-1lGcK7tGfdWeIRb4MvaPMX0gbC3WNMXUm2XmKKcD3_B-GT62g8IHCTx27mKF7ReClzrOu_KUueZJimGyDIOgYOOZIB78uctjoBxckBdc_-kdQuTc5CCRM9ScqX_CNAzmcNdS107YbpecAupoL1HSn4bFGbzu-CVWp8wxolOS8mPW_ZrgvDF2LQ_5U6qge37WvsG9wpdl-7dPVKlVDtaqY_B2z6qrZIKJzNGVnv-O3P70_2xWklKXVDw-OZJJPjjm5niIjFsODp9peDQ",{type:"bearer"}) 
+    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjZhNGY4N2ZmNWQ5M2ZhNmVhMDNlNWM2ZTg4ZWVhMGFjZDJhMjMyYTkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTY5ODg5LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxNjk4ODksImV4cCI6MTY0OTE3MzQ4OSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.VGTp_XbHbG7XUIfYPh-mbmbgKGnFbTdpMSSPDaOJK1L-Ih1Dd2uoV6D4cJHv7kVJC37RtN9mYaYnSFGlwZMKAR5F0HyZXX8tkGa19MuGrZCUXArXtEMz7ae6pK1Tr17ONrFls2L-lpFPgExOiBTmLiG353sjgLPNPx9M1lcvJP05_wOWefZCBmsWXPjJAOFHrXvf9Ku3d3qtsWza0mz36xGa8lCGVVgOc-k1t6fbia7d706E9N1KfvU6NFufYAqZq4P6Rgi9EEUjlvsiz3CtfsempzML1jsk8lO3wG6okmv51YysT1vYaHucVNkikBEH5iIzk6m0aQcwWflUlZNtlw",{type:"bearer"}) 
     .expect('Content-Type', /json/).expect(500)
     
   })
@@ -75,8 +75,8 @@ describe('Testing Read', ()=>{
   
   it('GET /resume/:validtoken must get a resume object ', async ()=>{
     
-    return await request(server).get('/resume/read/624b63ca18bcde99b9228654')
-    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjQ2NDExN2FjMzk2YmM3MWM4YzU5ZmI1MTlmMDEzZTJiNWJiNmM2ZTEiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTE2MTk1LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxMTYxOTUsImV4cCI6MTY0OTExOTc5NSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.UWF_KiRj8XMuzMMQYlMDEJi32zZey3FFmEq1tM0MXyJPj73s3IY-_Foonb8nViHWJXT-8t-1lGcK7tGfdWeIRb4MvaPMX0gbC3WNMXUm2XmKKcD3_B-GT62g8IHCTx27mKF7ReClzrOu_KUueZJimGyDIOgYOOZIB78uctjoBxckBdc_-kdQuTc5CCRM9ScqX_CNAzmcNdS107YbpecAupoL1HSn4bFGbzu-CVWp8wxolOS8mPW_ZrgvDF2LQ_5U6qge37WvsG9wpdl-7dPVKlVDtaqY_B2z6qrZIKJzNGVnv-O3P70_2xWklKXVDw-OZJJPjjm5niIjFsODp9peDQ",{type:"bearer"})
+    return await request(server).get('/resume/read/624c1d677fe80718c8b99e34')
+    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjZhNGY4N2ZmNWQ5M2ZhNmVhMDNlNWM2ZTg4ZWVhMGFjZDJhMjMyYTkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTY5ODg5LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxNjk4ODksImV4cCI6MTY0OTE3MzQ4OSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.VGTp_XbHbG7XUIfYPh-mbmbgKGnFbTdpMSSPDaOJK1L-Ih1Dd2uoV6D4cJHv7kVJC37RtN9mYaYnSFGlwZMKAR5F0HyZXX8tkGa19MuGrZCUXArXtEMz7ae6pK1Tr17ONrFls2L-lpFPgExOiBTmLiG353sjgLPNPx9M1lcvJP05_wOWefZCBmsWXPjJAOFHrXvf9Ku3d3qtsWza0mz36xGa8lCGVVgOc-k1t6fbia7d706E9N1KfvU6NFufYAqZq4P6Rgi9EEUjlvsiz3CtfsempzML1jsk8lO3wG6okmv51YysT1vYaHucVNkikBEH5iIzk6m0aQcwWflUlZNtlw",{type:"bearer"})
     .expect('Content-Type', /json/).expect(200)
     .then((response)=>{
       expect(response.body).toEqual(expect.objectContaining({
@@ -87,15 +87,15 @@ describe('Testing Read', ()=>{
   })
 
   it('GET /resume/:userID=valid but wrong token must return 404 ',async ()=>{
-    return await request(server).get('/resume/read/62497fbc6a077a3026357f29')
-    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjQ2NDExN2FjMzk2YmM3MWM4YzU5ZmI1MTlmMDEzZTJiNWJiNmM2ZTEiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTE2MTk1LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxMTYxOTUsImV4cCI6MTY0OTExOTc5NSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.UWF_KiRj8XMuzMMQYlMDEJi32zZey3FFmEq1tM0MXyJPj73s3IY-_Foonb8nViHWJXT-8t-1lGcK7tGfdWeIRb4MvaPMX0gbC3WNMXUm2XmKKcD3_B-GT62g8IHCTx27mKF7ReClzrOu_KUueZJimGyDIOgYOOZIB78uctjoBxckBdc_-kdQuTc5CCRM9ScqX_CNAzmcNdS107YbpecAupoL1HSn4bFGbzu-CVWp8wxolOS8mPW_ZrgvDF2LQ_5U6qge37WvsG9wpdl-7dPVKlVDtaqY_B2z6qrZIKJzNGVnv-O3P70_2xWklKXVDw-OZJJPjjm5niIjFsODp9peDQ",{type:"bearer"}) 
+    return await request(server).get('/resume/read/624c1d677fe80718c8b99e31')
+    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjZhNGY4N2ZmNWQ5M2ZhNmVhMDNlNWM2ZTg4ZWVhMGFjZDJhMjMyYTkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTY5ODg5LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxNjk4ODksImV4cCI6MTY0OTE3MzQ4OSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.VGTp_XbHbG7XUIfYPh-mbmbgKGnFbTdpMSSPDaOJK1L-Ih1Dd2uoV6D4cJHv7kVJC37RtN9mYaYnSFGlwZMKAR5F0HyZXX8tkGa19MuGrZCUXArXtEMz7ae6pK1Tr17ONrFls2L-lpFPgExOiBTmLiG353sjgLPNPx9M1lcvJP05_wOWefZCBmsWXPjJAOFHrXvf9Ku3d3qtsWza0mz36xGa8lCGVVgOc-k1t6fbia7d706E9N1KfvU6NFufYAqZq4P6Rgi9EEUjlvsiz3CtfsempzML1jsk8lO3wG6okmv51YysT1vYaHucVNkikBEH5iIzk6m0aQcwWflUlZNtlw",{type:"bearer"}) 
     .expect('Content-Type', /json/).expect(404)
       
       
   })
   it('GET /resume/:userID=invalid 500 ', async ()=>{
     return await request(server).get('/resume/read/ddd')
-    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjQ2NDExN2FjMzk2YmM3MWM4YzU5ZmI1MTlmMDEzZTJiNWJiNmM2ZTEiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTE2MTk1LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxMTYxOTUsImV4cCI6MTY0OTExOTc5NSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.UWF_KiRj8XMuzMMQYlMDEJi32zZey3FFmEq1tM0MXyJPj73s3IY-_Foonb8nViHWJXT-8t-1lGcK7tGfdWeIRb4MvaPMX0gbC3WNMXUm2XmKKcD3_B-GT62g8IHCTx27mKF7ReClzrOu_KUueZJimGyDIOgYOOZIB78uctjoBxckBdc_-kdQuTc5CCRM9ScqX_CNAzmcNdS107YbpecAupoL1HSn4bFGbzu-CVWp8wxolOS8mPW_ZrgvDF2LQ_5U6qge37WvsG9wpdl-7dPVKlVDtaqY_B2z6qrZIKJzNGVnv-O3P70_2xWklKXVDw-OZJJPjjm5niIjFsODp9peDQ",{type:"bearer"}) 
+    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjZhNGY4N2ZmNWQ5M2ZhNmVhMDNlNWM2ZTg4ZWVhMGFjZDJhMjMyYTkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTY5ODg5LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxNjk4ODksImV4cCI6MTY0OTE3MzQ4OSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.VGTp_XbHbG7XUIfYPh-mbmbgKGnFbTdpMSSPDaOJK1L-Ih1Dd2uoV6D4cJHv7kVJC37RtN9mYaYnSFGlwZMKAR5F0HyZXX8tkGa19MuGrZCUXArXtEMz7ae6pK1Tr17ONrFls2L-lpFPgExOiBTmLiG353sjgLPNPx9M1lcvJP05_wOWefZCBmsWXPjJAOFHrXvf9Ku3d3qtsWza0mz36xGa8lCGVVgOc-k1t6fbia7d706E9N1KfvU6NFufYAqZq4P6Rgi9EEUjlvsiz3CtfsempzML1jsk8lO3wG6okmv51YysT1vYaHucVNkikBEH5iIzk6m0aQcwWflUlZNtlw",{type:"bearer"}) 
     .expect('Content-Type', /json/).expect(500)
       
       
@@ -112,7 +112,7 @@ describe('Testing Create', ()=>{
   it('POST Create with missing body or incorrect must return 400 with error ',async ()=>{
     
     return await request(server).post('/resume/create')
-    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjQ2NDExN2FjMzk2YmM3MWM4YzU5ZmI1MTlmMDEzZTJiNWJiNmM2ZTEiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTE2MTk1LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxMTYxOTUsImV4cCI6MTY0OTExOTc5NSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.UWF_KiRj8XMuzMMQYlMDEJi32zZey3FFmEq1tM0MXyJPj73s3IY-_Foonb8nViHWJXT-8t-1lGcK7tGfdWeIRb4MvaPMX0gbC3WNMXUm2XmKKcD3_B-GT62g8IHCTx27mKF7ReClzrOu_KUueZJimGyDIOgYOOZIB78uctjoBxckBdc_-kdQuTc5CCRM9ScqX_CNAzmcNdS107YbpecAupoL1HSn4bFGbzu-CVWp8wxolOS8mPW_ZrgvDF2LQ_5U6qge37WvsG9wpdl-7dPVKlVDtaqY_B2z6qrZIKJzNGVnv-O3P70_2xWklKXVDw-OZJJPjjm5niIjFsODp9peDQ",{type:"bearer"})
+    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjZhNGY4N2ZmNWQ5M2ZhNmVhMDNlNWM2ZTg4ZWVhMGFjZDJhMjMyYTkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTY5ODg5LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxNjk4ODksImV4cCI6MTY0OTE3MzQ4OSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.VGTp_XbHbG7XUIfYPh-mbmbgKGnFbTdpMSSPDaOJK1L-Ih1Dd2uoV6D4cJHv7kVJC37RtN9mYaYnSFGlwZMKAR5F0HyZXX8tkGa19MuGrZCUXArXtEMz7ae6pK1Tr17ONrFls2L-lpFPgExOiBTmLiG353sjgLPNPx9M1lcvJP05_wOWefZCBmsWXPjJAOFHrXvf9Ku3d3qtsWza0mz36xGa8lCGVVgOc-k1t6fbia7d706E9N1KfvU6NFufYAqZq4P6Rgi9EEUjlvsiz3CtfsempzML1jsk8lO3wG6okmv51YysT1vYaHucVNkikBEH5iIzk6m0aQcwWflUlZNtlw",{type:"bearer"})
     .expect('Content-Type', /json/)
     .set({name:'valied'})
     .expect(400);
@@ -121,38 +121,42 @@ describe('Testing Create', ()=>{
 
   it('POST create with valid body ', async ()=>{
     return await request(server).post('/resume/create')
-    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjQ2NDExN2FjMzk2YmM3MWM4YzU5ZmI1MTlmMDEzZTJiNWJiNmM2ZTEiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTE2MTk1LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxMTYxOTUsImV4cCI6MTY0OTExOTc5NSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.UWF_KiRj8XMuzMMQYlMDEJi32zZey3FFmEq1tM0MXyJPj73s3IY-_Foonb8nViHWJXT-8t-1lGcK7tGfdWeIRb4MvaPMX0gbC3WNMXUm2XmKKcD3_B-GT62g8IHCTx27mKF7ReClzrOu_KUueZJimGyDIOgYOOZIB78uctjoBxckBdc_-kdQuTc5CCRM9ScqX_CNAzmcNdS107YbpecAupoL1HSn4bFGbzu-CVWp8wxolOS8mPW_ZrgvDF2LQ_5U6qge37WvsG9wpdl-7dPVKlVDtaqY_B2z6qrZIKJzNGVnv-O3P70_2xWklKXVDw-OZJJPjjm5niIjFsODp9peDQ",{type:"bearer"}) 
+    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjZhNGY4N2ZmNWQ5M2ZhNmVhMDNlNWM2ZTg4ZWVhMGFjZDJhMjMyYTkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTY5ODg5LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxNjk4ODksImV4cCI6MTY0OTE3MzQ4OSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.VGTp_XbHbG7XUIfYPh-mbmbgKGnFbTdpMSSPDaOJK1L-Ih1Dd2uoV6D4cJHv7kVJC37RtN9mYaYnSFGlwZMKAR5F0HyZXX8tkGa19MuGrZCUXArXtEMz7ae6pK1Tr17ONrFls2L-lpFPgExOiBTmLiG353sjgLPNPx9M1lcvJP05_wOWefZCBmsWXPjJAOFHrXvf9Ku3d3qtsWza0mz36xGa8lCGVVgOc-k1t6fbia7d706E9N1KfvU6NFufYAqZq4P6Rgi9EEUjlvsiz3CtfsempzML1jsk8lO3wG6okmv51YysT1vYaHucVNkikBEH5iIzk6m0aQcwWflUlZNtlw",{type:"bearer"}) 
     .send({ 
+      Title:"Resume 1",
       User : "62497d716a077a3026357f1e",
       BasicInfo:{
-           Name: "Daniyal Mujtaba", 
+          Name: "Daniyal Mujtaba", 
           PhoneNumber : "923322296562",
           Email : "daniyal.mujtab10@gmail.com",
           Address : "A81 Street 3 "
       },
       Education: [{
           Institute : "Fast Nuces",
-          startDate : "Aug 2017",
-          endDate : "June 2021",
-          present : false,
+          StartDate : "Aug 2017",
+          EndDate : "June 2021",
+          Present : false,
           Summary: "Nothing did ",
           Level : "Bachelors",
           Major: "Computer Science",
-          GPA: "2.33"
+          GPA: "2.33",
+          Location:"Karachi",
+
       }],
       Experience: [{
           Company : "TripleK",
-          startDate : "July 2021",
-          endDate : "Dec 2021",
-          present  : false,
-        Summary: "SAsdkadkaa"
+          StartDate : "July 2021",
+          EndDate : "Dec 2021",
+          Present  : false,
+          Summary: "SAsdkadkaa",
+          Type:"Full-time"
       }],
       Skills: [{
-        name:"ReactJS",
-        level:"Advanced"
+        Name:"ReactJS",
+        Level:"Advanced"
       }]
   
-  })
+    })
     .expect('Content-Type', /json/).expect(200)
     
       
@@ -164,14 +168,141 @@ describe('Testing Create', ()=>{
 describe('Testing Delete ' , ()=>{
   it('Delete with invalid ID' , async ()=>{
     return await request(server).delete('/resume/delete/624b63ca18xcde99b922865r')
-    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjQ2NDExN2FjMzk2YmM3MWM4YzU5ZmI1MTlmMDEzZTJiNWJiNmM2ZTEiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTE2MTk1LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxMTYxOTUsImV4cCI6MTY0OTExOTc5NSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.UWF_KiRj8XMuzMMQYlMDEJi32zZey3FFmEq1tM0MXyJPj73s3IY-_Foonb8nViHWJXT-8t-1lGcK7tGfdWeIRb4MvaPMX0gbC3WNMXUm2XmKKcD3_B-GT62g8IHCTx27mKF7ReClzrOu_KUueZJimGyDIOgYOOZIB78uctjoBxckBdc_-kdQuTc5CCRM9ScqX_CNAzmcNdS107YbpecAupoL1HSn4bFGbzu-CVWp8wxolOS8mPW_ZrgvDF2LQ_5U6qge37WvsG9wpdl-7dPVKlVDtaqY_B2z6qrZIKJzNGVnv-O3P70_2xWklKXVDw-OZJJPjjm5niIjFsODp9peDQ",{type:"bearer"}) 
-    .expect(400)
+    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjZhNGY4N2ZmNWQ5M2ZhNmVhMDNlNWM2ZTg4ZWVhMGFjZDJhMjMyYTkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTY5ODg5LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxNjk4ODksImV4cCI6MTY0OTE3MzQ4OSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.VGTp_XbHbG7XUIfYPh-mbmbgKGnFbTdpMSSPDaOJK1L-Ih1Dd2uoV6D4cJHv7kVJC37RtN9mYaYnSFGlwZMKAR5F0HyZXX8tkGa19MuGrZCUXArXtEMz7ae6pK1Tr17ONrFls2L-lpFPgExOiBTmLiG353sjgLPNPx9M1lcvJP05_wOWefZCBmsWXPjJAOFHrXvf9Ku3d3qtsWza0mz36xGa8lCGVVgOc-k1t6fbia7d706E9N1KfvU6NFufYAqZq4P6Rgi9EEUjlvsiz3CtfsempzML1jsk8lO3wG6okmv51YysT1vYaHucVNkikBEH5iIzk6m0aQcwWflUlZNtlw",{type:"bearer"}) 
+    .expect(500)
   })
   it('Delete with valid ID' , async ()=>{
     return await request(server).delete('/resume/delete/624b63ca18bcde99b9228654')
-    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjQ2NDExN2FjMzk2YmM3MWM4YzU5ZmI1MTlmMDEzZTJiNWJiNmM2ZTEiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTE2MTk1LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxMTYxOTUsImV4cCI6MTY0OTExOTc5NSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.UWF_KiRj8XMuzMMQYlMDEJi32zZey3FFmEq1tM0MXyJPj73s3IY-_Foonb8nViHWJXT-8t-1lGcK7tGfdWeIRb4MvaPMX0gbC3WNMXUm2XmKKcD3_B-GT62g8IHCTx27mKF7ReClzrOu_KUueZJimGyDIOgYOOZIB78uctjoBxckBdc_-kdQuTc5CCRM9ScqX_CNAzmcNdS107YbpecAupoL1HSn4bFGbzu-CVWp8wxolOS8mPW_ZrgvDF2LQ_5U6qge37WvsG9wpdl-7dPVKlVDtaqY_B2z6qrZIKJzNGVnv-O3P70_2xWklKXVDw-OZJJPjjm5niIjFsODp9peDQ",{type:"bearer"}) 
-    .expect(400)
+    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjZhNGY4N2ZmNWQ5M2ZhNmVhMDNlNWM2ZTg4ZWVhMGFjZDJhMjMyYTkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTY5ODg5LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxNjk4ODksImV4cCI6MTY0OTE3MzQ4OSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.VGTp_XbHbG7XUIfYPh-mbmbgKGnFbTdpMSSPDaOJK1L-Ih1Dd2uoV6D4cJHv7kVJC37RtN9mYaYnSFGlwZMKAR5F0HyZXX8tkGa19MuGrZCUXArXtEMz7ae6pK1Tr17ONrFls2L-lpFPgExOiBTmLiG353sjgLPNPx9M1lcvJP05_wOWefZCBmsWXPjJAOFHrXvf9Ku3d3qtsWza0mz36xGa8lCGVVgOc-k1t6fbia7d706E9N1KfvU6NFufYAqZq4P6Rgi9EEUjlvsiz3CtfsempzML1jsk8lO3wG6okmv51YysT1vYaHucVNkikBEH5iIzk6m0aQcwWflUlZNtlw",{type:"bearer"}) 
+    .expect(201)
   })
 })
 
 
+describe("Testing Update", ()=>{
+  it('PATCH with invalid Token  ',async ()=>{
+    
+    return await request(server).patch('/resume/update/dadafa')
+    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjZhNGY4N2ZmNWQ5M2ZhNmVhMDNlNWM2ZTg4ZWVhMGFjZDJhMjMyYTkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTY5ODg5LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxNjk4ODksImV4cCI6MTY0OTE3MzQ4OSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.VGTp_XbHbG7XUIfYPh-mbmbgKGnFbTdpMSSPDaOJK1L-Ih1Dd2uoV6D4cJHv7kVJC37RtN9mYaYnSFGlwZMKAR5F0HyZXX8tkGa19MuGrZCUXArXtEMz7ae6pK1Tr17ONrFls2L-lpFPgExOiBTmLiG353sjgLPNPx9M1lcvJP05_wOWefZCBmsWXPjJAOFHrXvf9Ku3d3qtsWza0mz36xGa8lCGVVgOc-k1t6fbia7d706E9N1KfvU6NFufYAqZq4P6Rgi9EEUjlvsiz3CtfsempzML1jsk8lO3wG6okmv51YysT1vYaHucVNkikBEH5iIzk6m0aQcwWflUlZNtlw",{type:"bearer"})
+    .expect('Content-Type', /json/)
+    .send({ 
+      Title:"Resume 1",
+      User : "62497d716a077a3026357f1e",
+      BasicInfo:{
+          Name: "Daniyal Mujtaba", 
+          PhoneNumber : "923322296562",
+          Email : "daniyal.mujtab10@gmail.com",
+          Address : "A81 Street 3 "
+      },
+      Education: [{
+          Institute : "Fast Nuces",
+          StartDate : "Aug 2017",
+          EndDate : "June 2021",
+          Present : false,
+          Summary: "Nothing did ",
+          Level : "Bachelors",
+          Major: "Computer Science",
+          GPA: "2.33",
+          Location:"Karachi",
+
+      }],
+      Experience: [{
+          Company : "TripleK",
+          StartDate : "July 2021",
+          EndDate : "Dec 2021",
+          Present  : false,
+          Summary: "SAsdkadkaa",
+          Type:"Full-time"
+      }],
+      Skills: [{
+        Name:"ReactJS",
+        Level:"Advanced"
+      }]
+  
+    })
+    .expect(500);
+    
+})
+  it('update with valid Token but wrong body ',async ()=>{
+    
+    return await request(server).patch('/resume/update/624c1d677fe80718c8b99e34')
+    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjZhNGY4N2ZmNWQ5M2ZhNmVhMDNlNWM2ZTg4ZWVhMGFjZDJhMjMyYTkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTY5ODg5LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxNjk4ODksImV4cCI6MTY0OTE3MzQ4OSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.VGTp_XbHbG7XUIfYPh-mbmbgKGnFbTdpMSSPDaOJK1L-Ih1Dd2uoV6D4cJHv7kVJC37RtN9mYaYnSFGlwZMKAR5F0HyZXX8tkGa19MuGrZCUXArXtEMz7ae6pK1Tr17ONrFls2L-lpFPgExOiBTmLiG353sjgLPNPx9M1lcvJP05_wOWefZCBmsWXPjJAOFHrXvf9Ku3d3qtsWza0mz36xGa8lCGVVgOc-k1t6fbia7d706E9N1KfvU6NFufYAqZq4P6Rgi9EEUjlvsiz3CtfsempzML1jsk8lO3wG6okmv51YysT1vYaHucVNkikBEH5iIzk6m0aQcwWflUlZNtlw",{type:"bearer"})
+    .expect('Content-Type', /json/)
+    .send({ 
+      Title:"Resume 1",
+      User : "62497d716a077a3026357f1e",
+      BasicInfo:{
+          Name: "Daniyal Mujtaba", 
+          PhoneNumber : "923322296562",
+          Email : "daniyal.mujtab10@gmail.com",
+          Address : "A81 Street 3 "
+      },
+      Education: [{
+          Institute : "Fast Nuces",
+          StartDate : "Aug 2017",
+          EndDate : "June 2021",
+          Present : false,
+          Summary: "Nothing did ",
+          Level : "Bachelors",
+          Major: "Computer Science",
+          GPA: "2.33",
+
+      }],
+      Experience: [{
+          Company : "TripleK",
+          StartDate : "July 2021",
+          EndDate : "Dec 2021",
+          Present  : false,
+      }],
+      Skills: [{
+        Name:"ReactJS",
+        Level:"Advanced"
+      }]
+
+    })
+    .expect(500);
+    
+  })
+  it('update with valid body and token', async ()=>{
+    return await request(server).patch('/resume/update/624c1d677fe80718c8b99e34')
+    .auth("eyJhbGciOiJSUzI1NiIsImtpZCI6IjZhNGY4N2ZmNWQ5M2ZhNmVhMDNlNWM2ZTg4ZWVhMGFjZDJhMjMyYTkiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiRGFuaXlhbCBNdWp0YWJhIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBVFhBSnpGQ2tBWV82YnlkMjZUczhGT1AzcXVUVzdmM0tRRFJIckFvUHFYPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL3Jlc3VtZS1idWlsZGVyLWF1dGgtZDAzNzIiLCJhdWQiOiJyZXN1bWUtYnVpbGRlci1hdXRoLWQwMzcyIiwiYXV0aF90aW1lIjoxNjQ5MTY5ODg5LCJ1c2VyX2lkIjoiT2dpZWMxZVdsV1RQYTZBOU9hWThlNG02RDJCMiIsInN1YiI6Ik9naWVjMWVXbFdUUGE2QTlPYVk4ZTRtNkQyQjIiLCJpYXQiOjE2NDkxNjk4ODksImV4cCI6MTY0OTE3MzQ4OSwiZW1haWwiOiJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjExNjQ1MTkyNzIxMzkyNjg1MTIzNCJdLCJlbWFpbCI6WyJkYW5peWFsLm11anRhYmExMEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.VGTp_XbHbG7XUIfYPh-mbmbgKGnFbTdpMSSPDaOJK1L-Ih1Dd2uoV6D4cJHv7kVJC37RtN9mYaYnSFGlwZMKAR5F0HyZXX8tkGa19MuGrZCUXArXtEMz7ae6pK1Tr17ONrFls2L-lpFPgExOiBTmLiG353sjgLPNPx9M1lcvJP05_wOWefZCBmsWXPjJAOFHrXvf9Ku3d3qtsWza0mz36xGa8lCGVVgOc-k1t6fbia7d706E9N1KfvU6NFufYAqZq4P6Rgi9EEUjlvsiz3CtfsempzML1jsk8lO3wG6okmv51YysT1vYaHucVNkikBEH5iIzk6m0aQcwWflUlZNtlw",{type:"bearer"}) 
+    .send({ 
+      Title:"Resume 1",
+      User : "62497d716a077a3026357f1e",
+      BasicInfo:{
+          Name: "Daniyal Mujtaba", 
+          PhoneNumber : "923322296562",
+          Email : "daniyal.mujtab10@gmail.com",
+          Address : "A81 Street 3 "
+      },
+      Education: [{
+          Institute : "Fast Nuces",
+          StartDate : "Aug 2017",
+          EndDate : "June 2021",
+          Present : false,
+          Summary: "Nothing did ",
+          Level : "Bachelors",
+          Major: "Computer Science",
+          GPA: "2.33",
+          Location:"Karachi",
+
+      }],
+      Experience: [{
+          Company : "TripleK",
+          StartDate : "July 2021",
+          EndDate : "Dec 2021",
+          Present  : false,
+          Summary: "SAsdkadkaa",
+          Type:"Full-time"
+      }],
+      Skills: [{
+        Name:"ReactJS",
+        Level:"Advanced"
+      }]
+  
+    })
+    .expect('Content-Type', /json/).expect(200)
+    
+      
+  })
+})
