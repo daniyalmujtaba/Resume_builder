@@ -7,6 +7,7 @@
   "scripts": {
     "start:dev": "nodemon",
     "build": "rimraf ./build && tsc",
+    "rimraf": "./node_modules/rimraf/bin.js",
     "start": "npm run build && node build/server.js",
     "lint": "eslint . --ext .ts",
     "test": "jest --watch"
