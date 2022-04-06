@@ -13,6 +13,10 @@
     "lint": "eslint . --ext .ts",
     "test": "jest --watch"
   },
+  "engines": {
+    "node": "16.3.2",
+    "npm":"8.1.2"
+  },
   "jest": {
     "preset": "ts-jest/presets/default-esm",
     "globals": {
