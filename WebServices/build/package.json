@@ -9,7 +9,7 @@
     "build": "rimraf ./build && tsc",
     "tsc": "tsc",
     "rimraf": "./node_modules/rimraf/bin.js",
-    "start": "npm run build && node --max-old-space-size=4096 --experimental-modules --es-module-specifier-resolution=node build/index.js",
+    "start": "node --max-old-space-size=4096 --experimental-modules --es-module-specifier-resolution=node build/index.js",
     "lint": "eslint . --ext .ts",
     "test": "jest --watch"
   },
