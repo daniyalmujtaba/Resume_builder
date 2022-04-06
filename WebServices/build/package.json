@@ -14,8 +14,8 @@
     "test": "jest --watch"
   },
   "engines": {
-    "node": "16.3.2",
-    "npm":"8.1.2"
+    "node": "16.x",
+    "npm":"8.x"
   },
   "jest": {
     "preset": "ts-jest/presets/default-esm",
