@@ -20,7 +20,7 @@ var MONGO = {
     url: "mongodb+srv://".concat(MONGO_USERNAME, ":").concat(MONGO_PASSWORD, "@").concat(MONGO_HOST)
 };
 var SERVER_HOSTNAME = process.env.SERVER_HOSTNAME || 'localhost';
-var SERVER_PORT = process.env.SERVER_PORT || 4000;
+var SERVER_PORT = process.env.PORT || 4000;
 var SERVER = {
     hostname: SERVER_HOSTNAME,
     port: SERVER_PORT
